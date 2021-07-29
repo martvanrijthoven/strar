@@ -17,9 +17,6 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Set up repo
-        run: echo "PYTHONPATH=./strar" >> $GITHUB_ENV
-
       - name: Generate coverage report
         run: |
           pip install pytest
