@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Set up repo
-        run: echo "$HOME/strar" >> $PYTHON_PATH
+        run: echo "${HOME}/strar" >> "${PYTHON_PATH}"
 
       - name: Generate coverage report
         run: |
