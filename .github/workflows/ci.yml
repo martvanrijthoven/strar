@@ -8,7 +8,7 @@ env:
 
 jobs:
   tests:
-    runs-on: ${{ env.OS }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
