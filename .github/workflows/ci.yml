@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Set up repo
-        run: echo "::set-env name=PYTHONPATH::home/runner/work/strar"
+        run: echo "::add-path::./strar"
 
       - name: Generate coverage report
         run: |
