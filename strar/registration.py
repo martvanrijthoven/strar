@@ -1,8 +1,6 @@
 import warnings
 from abc import ABC
 from typing import Tuple
-
-from .utils import Text, chain_functions
 from .warnings import DuplicateRegistrantNameWarning
 
 

@@ -1,7 +1,7 @@
 from functools import lru_cache
 
-from .errors import RegistrantNotRegisteredError
-from .registration import Registrar
+from strar.errors import RegistrantNotRegisteredError
+from strar.registration import Registrar
 
 cache = lru_cache(maxsize=None)
 

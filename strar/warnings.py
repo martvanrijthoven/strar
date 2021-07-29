@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from .utils import Text
+from strar.utils import Text
 
 @dataclass(frozen=True)
 class DuplicateRegistrantNameWarning(Warning):
