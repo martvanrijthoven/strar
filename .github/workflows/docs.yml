@@ -10,7 +10,7 @@ env:
   PYTHON_VERSION: "3.8"
 
 jobs:
-  tests:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -28,8 +28,7 @@ jobs:
       - name: Build the docs
         run: sphinx-build -b html docs/source/ docs/build/html
 
-      - name: Deploy the documentation on master
-        if: github.ref == 'refs/heads/master'
+      - name: Deploy the documentation on gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
