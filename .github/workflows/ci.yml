@@ -17,6 +17,9 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
+      - name: Set up repo
+        run: echo "::set-env name=PYTHONPATH::home/runner/work/strar"
+
       - name: Generate coverage report
         run: |
           pip install pytest
