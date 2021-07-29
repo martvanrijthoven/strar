@@ -1,0 +1,34 @@
+name: CI
+
+on: [push, pull_request]
+
+env:
+  OS: ubuntu-latest
+  PYTHON_VERSION: "3.8"
+
+jobs:
+  tests:
+    runs-on: ${{ env.OS }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Generate coverage report
+        run: |
+          pip install pytest
+          pip install pytest-cov
+          pytest --cov=./strar --cov-report=xml
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./strar/coverage/reports/
+          env_vars: OS,PYTHON_VERSION
+          fail_ci_if_error: true
+          path_to_write_report: ./coverage/codecov_report.txt
+          verbose: true
