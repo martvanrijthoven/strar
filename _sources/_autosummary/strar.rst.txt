@@ -28,9 +28,7 @@
    :template: custom-module-template.rst                 
    :recursive:
 
-   strar.errors
-   strar.factory
-   strar.registration
-   strar.utils
-   strar.warnings
+   strar.setup
+   strar.strar
+   strar.tests
 

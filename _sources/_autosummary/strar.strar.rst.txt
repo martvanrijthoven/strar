@@ -1,0 +1,36 @@
+strar.strar
+===========
+
+.. automodule:: strar.strar
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst                 
+   :recursive:
+
+   strar.strar.errors
+   strar.strar.factory
+   strar.strar.registration
+   strar.strar.utils
+   strar.strar.warnings
+

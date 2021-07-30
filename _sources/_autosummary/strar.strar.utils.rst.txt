@@ -1,0 +1,38 @@
+strar.strar.utils
+=================
+
+.. automodule:: strar.strar.utils
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      chain_functions
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:                                         
+      :template: custom-class-template.rst               
+   
+      Text
+   
+   
+
+   
+   
+   
+
+
+

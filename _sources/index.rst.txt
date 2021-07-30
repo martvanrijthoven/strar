@@ -1,10 +1,5 @@
-Welcome to Strar documentation!
-===================================
-
-
-.. autosummary::
-   :toctree: _autosummary
-   :template: custom-module-template.rst
-   :recursive:
-
-   strar
+.. toctree::
+ 
+    Home page <self>
+    Jupyter tutorials <tutorials>
+    API reference <_autosummary/strar>

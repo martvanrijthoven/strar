@@ -1,0 +1,6 @@
+strar.strar.errors.RegistrantNotRegisteredError
+===============================================
+
+.. currentmodule:: strar.strar.errors
+
+.. autoexception:: RegistrantNotRegisteredError

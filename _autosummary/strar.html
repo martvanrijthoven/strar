@@ -31,10 +31,11 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="strar.errors" href="strar.errors.html" />
-    <link rel="prev" title="Welcome to Strar documentation!" href="../index.html" />
+    <link rel="next" title="strar.strar" href="strar.strar.html" />
+    <link rel="prev" title="Registrant Factory Tutorial" href="../notebooks/registrant_factory_tutorial.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -66,9 +67,21 @@
       
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 current active nav-item">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Home page
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../notebooks/registrant_factory_tutorial.html">
+  Registrant Factory Tutorial
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
  <a class="current reference internal nav-link" href="#">
-  strar
+  API reference
  </a>
 </li>
 
@@ -103,8 +116,8 @@
   <div class="bd-toc-item active">
     <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.errors.html">
-   strar.errors
+  <a class="reference internal" href="strar.strar.html">
+   strar.strar
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -112,85 +125,51 @@
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.errors.RegistrantNotRegisteredError.html">
-     strar.errors.RegistrantNotRegisteredError
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="strar.strar.errors.html">
+     strar.strar.errors
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="strar.strar.errors.RegistrantNotRegisteredError.html">
+       strar.strar.errors.RegistrantNotRegisteredError
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="strar.strar.utils.html">
+     strar.strar.utils
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="strar.strar.utils.chain_functions.html">
+       strar.strar.utils.chain_functions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="strar.strar.utils.Text.html">
+       strar.strar.utils.Text
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.factory.html">
-   strar.factory
+ <li class="toctree-l1">
+  <a class="reference internal" href="strar.tests.html">
+   strar.tests
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.factory.RegistrantFactory.html">
-     strar.factory.RegistrantFactory
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.registration.html">
-   strar.registration
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.registration.Registrar.html">
-     strar.registration.Registrar
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.utils.html">
-   strar.utils
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.utils.chain_functions.html">
-     strar.utils.chain_functions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.utils.Text.html">
-     strar.utils.Text
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.warnings.html">
-   strar.warnings
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.warnings.DuplicateRegistrantNameWarning.html">
-     strar.warnings.DuplicateRegistrantNameWarning
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -237,19 +216,10 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="strar.errors.html#module-strar.errors" title="strar.errors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.errors</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="strar.strar.html#module-strar.strar" title="strar.strar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.strar</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="strar.factory.html#module-strar.factory" title="strar.factory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.factory</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="strar.registration.html#module-strar.registration" title="strar.registration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.registration</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="strar.utils.html#module-strar.utils" title="strar.utils"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.utils</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="strar.warnings.html#module-strar.warnings" title="strar.warnings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.warnings</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="strar.tests.html#module-strar.tests" title="strar.tests"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strar.tests</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -262,8 +232,8 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">Welcome to Strar documentation!</a>
-    <a class='right-next' id="next-link" href="strar.errors.html" title="next page">strar.errors</a>
+    <a class='left-prev' id="prev-link" href="../notebooks/registrant_factory_tutorial.html" title="previous page">Registrant Factory Tutorial</a>
+    <a class='right-next' id="next-link" href="strar.strar.html" title="next page">strar.strar</a>
 
               </div>
               

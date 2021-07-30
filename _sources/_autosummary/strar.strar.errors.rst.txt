@@ -1,0 +1,30 @@
+strar.strar.errors
+==================
+
+.. automodule:: strar.strar.errors
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Exceptions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      RegistrantNotRegisteredError
+   
+   
+
+
+

@@ -31,10 +31,9 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="strar.registration" href="strar.registration.html" />
-    <link rel="prev" title="strar.factory" href="strar.factory.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -66,9 +65,21 @@
       
       <div class="navbar-center-item">
         <ul id="navbar-main-elements" class="navbar-nav">
-    <li class="toctree-l1 current active nav-item">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Home page
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../notebooks/registrant_factory_tutorial.html">
+  Registrant Factory Tutorial
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
  <a class="reference internal nav-link" href="strar.html">
-  strar
+  API reference
  </a>
 </li>
 
@@ -101,99 +112,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.errors.html">
-   strar.errors
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.errors.RegistrantNotRegisteredError.html">
-     strar.errors.RegistrantNotRegisteredError
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="strar.factory.html">
-   strar.factory
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     strar.factory.RegistrantFactory
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.registration.html">
-   strar.registration
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.registration.Registrar.html">
-     strar.registration.Registrar
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.utils.html">
-   strar.utils
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.utils.chain_functions.html">
-     strar.utils.chain_functions
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.utils.Text.html">
-     strar.utils.Text
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="strar.warnings.html">
-   strar.warnings
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="strar.warnings.DuplicateRegistrantNameWarning.html">
-     strar.warnings.DuplicateRegistrantNameWarning
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
+    
   </div>
 </nav>
             </div>
@@ -230,79 +149,6 @@
                 
   <div class="section" id="strar-factory-registrantfactory">
 <h1>strar.factory.RegistrantFactory<a class="headerlink" href="#strar-factory-registrantfactory" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="strar.factory.RegistrantFactory">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">strar.factory.</span></span><span class="sig-name descname"><span class="pre">RegistrantFactory</span></span><a class="headerlink" href="#strar.factory.RegistrantFactory" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="strar.registration.Registrar.html#strar.registration.Registrar" title="strar.registration.Registrar"><code class="xref py py-class docutils literal notranslate"><span class="pre">strar.registration.Registrar</span></code></a></p>
-<p>Factory class for creating instances or retreive object references</p>
-<dl class="simple">
-<dt>Class Atributes:</dt><dd><p>STATIC (bool): Used to create static instances if the instantiation is identical</p>
-</dd>
-<dt>Raises:</dt><dd><p>RegistrantNotRegisteredError: raised when registrant name is not in the register</p>
-</dd>
-</dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="strar.factory.RegistrantFactory.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#strar.factory.RegistrantFactory.__init__" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<p class="rubric">Methods</p>
-<table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#strar.factory.RegistrantFactory.__init__" title="strar.factory.RegistrantFactory.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">class_name</span></code>()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create</span></code>(registrant_name[, return_type])</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_registrant</span></code>(registrant_name)</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#strar.factory.RegistrantFactory.register" title="strar.factory.RegistrantFactory.register"><code class="xref py py-obj docutils literal notranslate"><span class="pre">register</span></code></a>(registrant_names[, replace])</p></td>
-<td><p>Register a virtual subclass of an ABC.</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Attributes</p>
-<table class="longtable table autosummary">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AUTO</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONVERT_NAME</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">REPLACE</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">STATIC</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-<dl class="py method">
-<dt class="sig sig-object py" id="strar.factory.RegistrantFactory.register">
-<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registrant_names</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Tuple</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#strar.factory.RegistrantFactory.register" title="Permalink to this definition">¶</a></dt>
-<dd><p>Register a virtual subclass of an ABC.</p>
-<p>Returns the subclass, to allow usage as a class decorator.</p>
-</dd></dl>
-
-</dd></dl>
-
 </div>
 
 
@@ -311,8 +157,6 @@
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="strar.factory.html" title="previous page">strar.factory</a>
-    <a class='right-next' id="next-link" href="strar.registration.html" title="next page">strar.registration</a>
 
               </div>
               
