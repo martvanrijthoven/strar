@@ -48,7 +48,7 @@ class Registrar(ABC):
 
     @classmethod
     def register(cls, registrant_names: Tuple, replace=False):
-        @wraps
+        @wraps(cls.register)
         def decorator(registrant: Registrar):
             registrant._register(
                 registrant.__bases__,
