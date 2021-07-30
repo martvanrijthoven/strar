@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         shell: bash
         run: |
-          pip install -r ./requirements.txt
+          pip install -r ./docs/requirements.txt
 
       - name: Build the docs
         run: sphinx-build -b html docs/source/ docs/build/html
