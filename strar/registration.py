@@ -2,7 +2,7 @@ import warnings
 from abc import ABC
 from typing import Tuple
 from .warnings import DuplicateRegistrantNameWarning
-
+from functools import wraps
 
 class Registrar(ABC):
     """Registrable class that can be used to register subclasses.
@@ -48,6 +48,7 @@ class Registrar(ABC):
 
     @classmethod
     def register(cls, registrant_names: Tuple, replace=False):
+        @wraps
         def decorator(registrant: Registrar):
             registrant._register(
                 registrant.__bases__,

@@ -1,5 +1,4 @@
 .. toctree::
-    :hidden:
  
     Home page <self>
     Jupyter tutorials <tutorials>
