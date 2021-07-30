@@ -10,7 +10,7 @@
 - https://martvanrijthoven.github.io/strar/
 - run: sphinx-build -b html docs/ docs/build/html
 
-**Tests: **
+**Tests:**
 
  - https://app.codecov.io/gh/martvanrijthoven/strar
  - run: pytest --cov=./strar --cov-report=xml
