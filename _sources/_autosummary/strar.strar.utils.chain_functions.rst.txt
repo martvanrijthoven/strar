@@ -1,6 +1,0 @@
-strar.strar.utils.chain\_functions
-==================================
-
-.. currentmodule:: strar.strar.utils
-
-.. autofunction:: chain_functions
