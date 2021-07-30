@@ -16,6 +16,8 @@
 
 
 # -- Project information -----------------------------------------------------
+import sys
+import os
 
 project = "strar"
 copyright = "2021, Mart van Rijthoven"
@@ -31,14 +33,16 @@ release = "0.0.1"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
-extensions = [
-    "sphinx.ext.autodoc",
-    "sphinx.ext.autosummary",
-    "myst_parser",
-    "sphinxcontrib.napoleon",
-]
+print(os.path.abspath('../..'))
+sys.path.insert(0, os.path.abspath('../..'))  # Source code dir relative to this file
 
-autosummary_generate = True
+extensions = [
+    'sphinx.ext.autodoc',  # Core library for html generation from docstrings
+    'sphinx.ext.autosummary',  # Create neat summary tables
+]
+autosummary_generate = True  # Turn on sphinx.ext.autosummary
+
+# Add any paths that contain templates here, relative to this directory.
 
 source_suffix = [".rst", ".md"]
 
