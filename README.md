@@ -6,4 +6,5 @@
 [![docs](https://github.com/martvanrijthoven/strar/actions/workflows/docs.yml/badge.svg)](https://github.com/martvanrijthoven/strar/actions/workflows/docs.yml)
 
 **Docs:** https://martvanrijthoven.github.io/strar/
+
 build the docs: sphinx-build -b html docs/ docs/build/html
