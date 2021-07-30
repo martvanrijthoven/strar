@@ -4,3 +4,6 @@ pydata_sphinx_theme
 sphinxcontrib-napoleon
 sphinx-autodoc-typehints
 nbsphinx
+ipython
+jupytext
+jupyter
